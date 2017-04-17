@@ -1,5 +1,7 @@
-<html lang="en"><head>
-    <title>Code coverage report for node-npmtest-html-minifier/html-minifier/src/tokenchain.js</title>
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for node-npmtest-html-minifier/node_modules/html-minifier/src/tokenchain.js</title>
     <meta charset="utf-8">
     <style>
         body, html {
@@ -192,7 +194,7 @@
     <h1 style="font-weight: bold;">
         <a href="https://github.com/npmtest/node-npmtest-html-minifier">npmtest-html-minifier (v0.0.1)</a>
     </h1>
-    <h1>Code coverage report for <span class="entity">node-npmtest-html-minifier/html-minifier/src/tokenchain.js</span></h1>
+    <h1>Code coverage report for <span class="entity">node-npmtest-html-minifier/node_modules/html-minifier/src/tokenchain.js</span></h1>
     <h2>
         
         Statements: <span class="metric">11.11% <small>(5 / 45)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
@@ -208,11 +210,11 @@
         
         Ignored: <span class="metric"><span class="ignore-none">none</span></span> &nbsp;&nbsp;&nbsp;&nbsp;
     </h2>
-    <div class="path"><a href="../../../index.html">All files</a> » <a href="index.html">node-npmtest-html-minifier/html-minifier/src/</a> » tokenchain.js</div>
+    <div class="path"><a href="../../../../index.html">All files</a> &#187; <a href="index.html">node-npmtest-html-minifier/node_modules/html-minifier/src/</a> &#187; tokenchain.js</div>
 </div>
 <div class="body">
 <pre><table class="coverage">
-<tbody><tr><td class="line-count">1
+<tr><td class="line-count">1
 2
 3
 4
@@ -358,82 +360,81 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">'use strict';
 &nbsp;
-<span class="fstat-no" title="function not covered">function Sorter() {</span>
+<span class="fstat-no" title="function not covered" >function Sorter() {</span>
 }
 &nbsp;
-Sorter.prototype.sort = <span class="fstat-no" title="function not covered">function(tokens, fromIndex) {</span>
-<span class="cstat-no" title="statement not covered">  fromIndex = fromIndex || 0;</span>
-<span class="cstat-no" title="statement not covered">  for (var i = 0, len = this.keys.length; i &lt; len; i++) {</span>
-<span class="cstat-no" title="statement not covered">    var key = this.keys[i];</span>
-<span class="cstat-no" title="statement not covered">    var token = key.slice(1);</span>
-<span class="cstat-no" title="statement not covered">    var index = tokens.indexOf(token, fromIndex);</span>
-<span class="cstat-no" title="statement not covered">    if (index !== -1) {</span>
-<span class="cstat-no" title="statement not covered">      do {</span>
-<span class="cstat-no" title="statement not covered">        if (index !== fromIndex) {</span>
-<span class="cstat-no" title="statement not covered">          tokens.splice(index, 1);</span>
-<span class="cstat-no" title="statement not covered">          tokens.splice(fromIndex, 0, token);</span>
+Sorter.prototype.sort = <span class="fstat-no" title="function not covered" >function(tokens, fromIndex) {</span>
+<span class="cstat-no" title="statement not covered" >  fromIndex = fromIndex || 0;</span>
+<span class="cstat-no" title="statement not covered" >  for (var i = 0, len = this.keys.length; i &lt; len; i++) {</span>
+<span class="cstat-no" title="statement not covered" >    var key = this.keys[i];</span>
+<span class="cstat-no" title="statement not covered" >    var token = key.slice(1);</span>
+<span class="cstat-no" title="statement not covered" >    var index = tokens.indexOf(token, fromIndex);</span>
+<span class="cstat-no" title="statement not covered" >    if (index !== -1) {</span>
+<span class="cstat-no" title="statement not covered" >      do {</span>
+<span class="cstat-no" title="statement not covered" >        if (index !== fromIndex) {</span>
+<span class="cstat-no" title="statement not covered" >          tokens.splice(index, 1);</span>
+<span class="cstat-no" title="statement not covered" >          tokens.splice(fromIndex, 0, token);</span>
         }
-<span class="cstat-no" title="statement not covered">        fromIndex++;</span>
+<span class="cstat-no" title="statement not covered" >        fromIndex++;</span>
       } while ((index = tokens.indexOf(token, fromIndex)) !== -1);
-<span class="cstat-no" title="statement not covered">      return this[key].sort(tokens, fromIndex);</span>
+<span class="cstat-no" title="statement not covered" >      return this[key].sort(tokens, fromIndex);</span>
     }
   }
-<span class="cstat-no" title="statement not covered">  return tokens;</span>
+<span class="cstat-no" title="statement not covered" >  return tokens;</span>
 };
 &nbsp;
-<span class="fstat-no" title="function not covered">function TokenChain() {</span>
+<span class="fstat-no" title="function not covered" >function TokenChain() {</span>
 }
 &nbsp;
 TokenChain.prototype = {
-  add: <span class="fstat-no" title="function not covered">function(tokens) {</span>
-<span class="cstat-no" title="statement not covered">    var self = this;</span>
-<span class="cstat-no" title="statement not covered">    tokens.forEach(<span class="fstat-no" title="function not covered">function(token) {</span></span>
-<span class="cstat-no" title="statement not covered">      var key = '$' + token;</span>
-<span class="cstat-no" title="statement not covered">      if (!self[key]) {</span>
-<span class="cstat-no" title="statement not covered">        self[key] = [];</span>
-<span class="cstat-no" title="statement not covered">        self[key].processed = 0;</span>
+  add: <span class="fstat-no" title="function not covered" >function(tokens) {</span>
+<span class="cstat-no" title="statement not covered" >    var self = this;</span>
+<span class="cstat-no" title="statement not covered" >    tokens.forEach(<span class="fstat-no" title="function not covered" >function(token) {</span></span>
+<span class="cstat-no" title="statement not covered" >      var key = '$' + token;</span>
+<span class="cstat-no" title="statement not covered" >      if (!self[key]) {</span>
+<span class="cstat-no" title="statement not covered" >        self[key] = [];</span>
+<span class="cstat-no" title="statement not covered" >        self[key].processed = 0;</span>
       }
-<span class="cstat-no" title="statement not covered">      self[key].push(tokens);</span>
+<span class="cstat-no" title="statement not covered" >      self[key].push(tokens);</span>
     });
   },
-  createSorter: <span class="fstat-no" title="function not covered">function() {</span>
-<span class="cstat-no" title="statement not covered">    var self = this;</span>
-<span class="cstat-no" title="statement not covered">    var sorter = new Sorter();</span>
-<span class="cstat-no" title="statement not covered">    sorter.keys = Object.keys(self).sort(<span class="fstat-no" title="function not covered">function(j, k) {</span></span>
-<span class="cstat-no" title="statement not covered">      var m = self[j].length;</span>
-<span class="cstat-no" title="statement not covered">      var n = self[k].length;</span>
-<span class="cstat-no" title="statement not covered">      return m &lt; n ? 1 : m &gt; n ? -1 : j &lt; k ? -1 : j &gt; k ? 1 : 0;</span>
-    }).filter(<span class="fstat-no" title="function not covered">function(key) {</span>
-<span class="cstat-no" title="statement not covered">      if (self[key].processed &lt; self[key].length) {</span>
-<span class="cstat-no" title="statement not covered">        var token = key.slice(1);</span>
-<span class="cstat-no" title="statement not covered">        var chain = new TokenChain();</span>
-<span class="cstat-no" title="statement not covered">        self[key].forEach(<span class="fstat-no" title="function not covered">function(tokens) {</span></span>
-<span class="cstat-no" title="statement not covered">          var index;</span>
-<span class="cstat-no" title="statement not covered">          while ((index = tokens.indexOf(token)) !== -1) {</span>
-<span class="cstat-no" title="statement not covered">            tokens.splice(index, 1);</span>
+  createSorter: <span class="fstat-no" title="function not covered" >function() {</span>
+<span class="cstat-no" title="statement not covered" >    var self = this;</span>
+<span class="cstat-no" title="statement not covered" >    var sorter = new Sorter();</span>
+<span class="cstat-no" title="statement not covered" >    sorter.keys = Object.keys(self).sort(<span class="fstat-no" title="function not covered" >function(j, k) {</span></span>
+<span class="cstat-no" title="statement not covered" >      var m = self[j].length;</span>
+<span class="cstat-no" title="statement not covered" >      var n = self[k].length;</span>
+<span class="cstat-no" title="statement not covered" >      return m &lt; n ? 1 : m &gt; n ? -1 : j &lt; k ? -1 : j &gt; k ? 1 : 0;</span>
+    }).filter(<span class="fstat-no" title="function not covered" >function(key) {</span>
+<span class="cstat-no" title="statement not covered" >      if (self[key].processed &lt; self[key].length) {</span>
+<span class="cstat-no" title="statement not covered" >        var token = key.slice(1);</span>
+<span class="cstat-no" title="statement not covered" >        var chain = new TokenChain();</span>
+<span class="cstat-no" title="statement not covered" >        self[key].forEach(<span class="fstat-no" title="function not covered" >function(tokens) {</span></span>
+<span class="cstat-no" title="statement not covered" >          var index;</span>
+<span class="cstat-no" title="statement not covered" >          while ((index = tokens.indexOf(token)) !== -1) {</span>
+<span class="cstat-no" title="statement not covered" >            tokens.splice(index, 1);</span>
           }
-<span class="cstat-no" title="statement not covered">          tokens.forEach(<span class="fstat-no" title="function not covered">function(token) {</span></span>
-<span class="cstat-no" title="statement not covered">            self['$' + token].processed++;</span>
+<span class="cstat-no" title="statement not covered" >          tokens.forEach(<span class="fstat-no" title="function not covered" >function(token) {</span></span>
+<span class="cstat-no" title="statement not covered" >            self['$' + token].processed++;</span>
           });
-<span class="cstat-no" title="statement not covered">          chain.add(tokens.slice(0));</span>
+<span class="cstat-no" title="statement not covered" >          chain.add(tokens.slice(0));</span>
         });
-<span class="cstat-no" title="statement not covered">        sorter[key] = chain.createSorter();</span>
-<span class="cstat-no" title="statement not covered">        return true;</span>
+<span class="cstat-no" title="statement not covered" >        sorter[key] = chain.createSorter();</span>
+<span class="cstat-no" title="statement not covered" >        return true;</span>
       }
-<span class="cstat-no" title="statement not covered">      return false;</span>
+<span class="cstat-no" title="statement not covered" >      return false;</span>
     });
-<span class="cstat-no" title="statement not covered">    return sorter;</span>
+<span class="cstat-no" title="statement not covered" >    return sorter;</span>
   }
 };
 &nbsp;
 module.exports = TokenChain;
 &nbsp;
 &nbsp;</pre></td></tr>
-</tbody></table></pre>
+</table></pre>
 </div>
 <div class="footer">
-    <div class="meta">Generated by <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a> at Tue Apr 11 2017 09:45:15 GMT+0000 (UTC)</div>
+    <div class="meta">Generated by <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a> at Mon Apr 17 2017 11:42:12 GMT+0000 (UTC)</div>
 </div>
-
-
-</body></html>
+</body>
+</html>
