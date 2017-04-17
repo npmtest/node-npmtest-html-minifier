@@ -1,7 +1,7 @@
 # test coverage for  [html-minifier (v3.4.3)](http://kangax.github.io/html-minifier/)  [![npm package](https://img.shields.io/npm/v/npmtest-html-minifier.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-html-minifier) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-html-minifier.svg)](https://travis-ci.org/npmtest/node-npmtest-html-minifier)
 #### Highly configurable, well-tested, JavaScript-based HTML minifier.
 
-[![NPM](https://nodei.co/npm/html-minifier.png?downloads=true)](https://www.npmjs.com/package/html-minifier)
+[![NPM](https://nodei.co/npm/html-minifier.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/html-minifier)
 
 | git-branch : | [alpha](https://github.com/npmtest/node-npmtest-html-minifier/tree/alpha)|
 |--:|:--|
@@ -9,11 +9,17 @@
 | test-report : | [![test-report](https://npmtest.github.io/node-npmtest-html-minifier/build/test-report.badge.svg)](https://npmtest.github.io/node-npmtest-html-minifier/build/test-report.html)|
 | build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-html-minifier/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-html-minifier/tree/gh-pages/build)|
 
-[![istanbul-coverage](https://npmtest.github.io/node-npmtest-html-minifier/build/screenCapture.buildCustomOrg.browser.coverage.html.png)](https://npmtest.github.io/node-npmtest-html-minifier/build/coverage.html/index.html)
+- [https://npmtest.github.io/node-npmtest-html-minifier/build/coverage.html/index.html](https://npmtest.github.io/node-npmtest-html-minifier/build/coverage.html/index.html)
 
-[![test-report](https://npmtest.github.io/node-npmtest-html-minifier/build/screenCapture.buildCustomOrg.browser.%252Fhome%252Ftravis%252Fbuild%252Fnpmtest%252Fnode-npmtest-html-minifier%252Ftmp%252Fbuild%252Ftest-report.html.png)](https://npmtest.github.io/node-npmtest-html-minifier/build/test-report.html)
+[![istanbul-coverage](https://npmtest.github.io/node-npmtest-html-minifier/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Fcoverage.lib.html.png)](https://npmtest.github.io/node-npmtest-html-minifier/build/coverage.html/index.html)
 
-[![apidoc](https://npmdoc.github.io/node-npmdoc-html-minifier/build/screenCapture.buildApidoc.browser.%252Fhome%252Ftravis%252Fbuild%252Fnpmdoc%252Fnode-npmdoc-html-minifier%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-html-minifier/build/apidoc.html)
+- [https://npmtest.github.io/node-npmtest-html-minifier/build/test-report.html](https://npmtest.github.io/node-npmtest-html-minifier/build/test-report.html)
+
+[![test-report](https://npmtest.github.io/node-npmtest-html-minifier/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Ftest-report.html.png)](https://npmtest.github.io/node-npmtest-html-minifier/build/test-report.html)
+
+- [https://npmdoc.github.io/node-npmdoc-html-minifier/build/apidoc.html](https://npmdoc.github.io/node-npmdoc-html-minifier/build/apidoc.html)
+
+[![apidoc](https://npmdoc.github.io/node-npmdoc-html-minifier/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-html-minifier/build/apidoc.html)
 
 ![npmPackageListing](https://npmtest.github.io/node-npmtest-html-minifier/build/screenCapture.npmPackageListing.svg)
 
@@ -49,12 +55,10 @@
             "url": "https://github.com/gilmoreorless"
         },
         {
-            "name": "Hugo Wetterberg",
-            "email": "hugo@wetterberg.nu"
+            "name": "Hugo Wetterberg"
         },
         {
-            "name": "Zoltan Frombach",
-            "email": "tssajo@gmail.com"
+            "name": "Zoltan Frombach"
         }
     ],
     "dependencies": {
@@ -117,17 +121,14 @@
     "main": "src/htmlminifier.js",
     "maintainers": [
         {
-            "name": "alexlamsl",
-            "email": "alex+npm@starthq.com"
+            "name": "alexlamsl"
         },
         {
-            "name": "kangax",
-            "email": "kangax@gmail.com"
+            "name": "kangax"
         }
     ],
     "name": "html-minifier",
     "optionalDependencies": {},
-    "readme": "ERROR: No README data found!",
     "repository": {
         "type": "git",
         "url": "git+https://github.com/kangax/html-minifier.git"
