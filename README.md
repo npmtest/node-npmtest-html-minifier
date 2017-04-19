@@ -1,4 +1,7 @@
-# test coverage for  [html-minifier (v3.4.3)](http://kangax.github.io/html-minifier/)  [![npm package](https://img.shields.io/npm/v/npmtest-html-minifier.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-html-minifier) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-html-minifier.svg)](https://travis-ci.org/npmtest/node-npmtest-html-minifier)
+# npmtest-html-minifier
+
+#### test coverage for  [html-minifier (v3.4.3)](http://kangax.github.io/html-minifier/)  [![npm package](https://img.shields.io/npm/v/npmtest-html-minifier.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-html-minifier) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-html-minifier.svg)](https://travis-ci.org/npmtest/node-npmtest-html-minifier)
+
 #### Highly configurable, well-tested, JavaScript-based HTML minifier.
 
 [![NPM](https://nodei.co/npm/html-minifier.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/html-minifier)
